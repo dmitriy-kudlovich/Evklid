@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Евклид</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row space-between ai-c">
+            <button class="hamburger"></button><a class="logo" href="index.html">
+              <div class="row ai-c">
+                <svg class="logo__pic">
+                  <use xlink:href="./img/header/svg-sprite_header.svg#logo"></use>
+                </svg>
+                <svg class="logo__text">
+                  <use xlink:href="./img/header/svg-sprite_header.svg#logoText"></use>
+                </svg>
+              </div></a>
+            <div class="row">
+              <nav class="header__nav"><a class="nav__link" href="#!">О нас</a><a class="nav__link" href="#!">Проекты</a><a class="nav__link" href="#!">Этапы</a><a class="nav__link" href="#!">Отзывы</a><a class="nav__link" href="#!">Контакты</a></nav>
+              <button class="header__surch">
+                <svg class="surch-ico">
+                  <use xlink:href="./img/header/svg-sprite_header.svg#surchIco"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-content">
+          <div class="header-text">
+            <h1 class="heading--main">Проектные решения <br class="header__br">любой сложности</h1>
+            <p class="header--desc">Есть над чем задуматься: базовые сценарии поведения<br class="header__br"> пользователей и по сей день остаются уделом проектантов</p>
+          </div><a class="button--orange button--orange--header" href="#!">Заказать расчёт</a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="swiper__img" src="./img/header/header-1.jpg"/></div>
+              <div class="swiper-slide"><img class="swiper__img" src="./img/header/header-2.jpg"/></div>
+              <div class="swiper-slide"><img class="swiper__img" src="./img/header/header-3.jpg"/></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="section">
+          <div class="section__text">
+            <h2 class="section__heading">О нас</h2>
+            <p class="section__desc">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+          </div>
+          <div class="row--adaptive">
+            <div class="col">
+              <div class="section__img-block">
+                <div class="section__img-wrapper"><img class="section__img" src="./img/main/about.jpg"/></div>
+                <div class="img__bottom">
+                  <p class="section__desc img__desc">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p><a class="button--transparent">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="section--sub">
+                <div class="col col--svg">
+                  <div class="section__img-wrapper--svg">
+                    <svg class="ellipce">
+                      <use xlink:href="./img/main/svg-sprite_main.svg#ellipce"></use>
+                    </svg>
+                    <svg class="package">
+                      <use xlink:href="./img/main/svg-sprite_main.svg#package"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="section__heading--sub">Консультация с широким активом</h3>
+                  <p class="section__desc section__desc--sub">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                </div>
+              </div>
+              <div class="section--sub">
+                <div class="col col--svg">
+                  <div class="section__img-wrapper--svg">
+                    <svg class="ellipce">
+                      <use xlink:href="./img/main/svg-sprite_main.svg#ellipce"></use>
+                    </svg>
+                    <svg class="gear">
+                      <use xlink:href="./img/main/svg-sprite_main.svg#gear"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col">
+                  <h3 class="section__heading--sub">В своём стремлении повысить</h3>
+                  <p class="section__desc section__desc--sub">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./libs/jquery.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

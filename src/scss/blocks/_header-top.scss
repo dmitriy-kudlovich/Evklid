@@ -1,0 +1,119 @@
+.header__top {
+  padding: 17px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 768px) {
+    padding: 14px 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 1px 0;
+  }
+}
+
+.logo {
+  display: block;
+}
+
+.logo__pic {
+  margin-left: -5px;
+  margin-right: 5px;
+  width: 18.65px;
+  height: 35.23px;
+
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 40px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 49px;
+    height: 75px;
+  }
+}
+
+.logo__text {
+  width: 84.97px;
+  height: 20.88px;
+
+  @media (min-width: 768px) {
+    width: 120px;
+    height: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 40px;
+  }
+
+  @media (min-width: 1920px) {
+    width: 175px;
+    height: 98px;
+  }
+}
+
+.surch-ico {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  stroke: #333333;
+
+  &:hover {
+    stroke: #ff9900;
+    fill: #ff9900;
+  }
+}
+
+.header__nav {
+  display: none;
+  margin-right: 79px;
+
+  @media (min-width: 1920px) {
+    display: flex;
+  }
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-right: 74px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+
+  &::after {
+    content: "";
+    border: 0;
+    left: 5px;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ff9900;
+  }
+
+  &:hover {
+    &::after {
+      transition: width 0.2s;
+      width: calc(100% - 10px);
+    }
+  }
+
+  &:active {
+    color: #e1670e;
+    &::after {
+      width: calc(100% - 10px);
+      background-color: #e1670e;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

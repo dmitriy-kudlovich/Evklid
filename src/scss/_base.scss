@@ -1,0 +1,126 @@
+/* Cтили, заданные по умолчанию */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1920px;
+  min-width: 320px;
+
+  @media (min-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 0 75px;
+  }
+}
+
+/* // Cтили, заданные по умолчанию */
+
+.row {
+  display: flex;
+}
+
+.row--adaptive {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1920px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.col {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: 1920px) {
+    margin-bottom: 0;
+  }
+}
+
+.col--svg {
+  margin-bottom: 7px;
+
+  @media (min-width: 1920px) {
+    margin-right: 117px;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}

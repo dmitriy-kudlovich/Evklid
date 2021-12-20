@@ -1,0 +1,137 @@
+.section--sub {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 40px;
+    border: 1px #cacaca solid;
+    letter-spacing: 0.1px;
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: space-between;
+    padding: 63px 148px;
+  }
+
+  @media (min-width: 1920px) {
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 63px 60px;
+    margin-bottom: 30px;
+    width: 870px;
+  }
+}
+
+.section__heading--sub {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.35px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 0.05px;
+  }
+}
+
+.section__desc--sub {
+  @media (min-width: 768px) {
+    width: 458px;
+    letter-spacing: 1.2px !important;
+  }
+
+  @media (min-width: 1920px) {
+    width: 450px !important;
+  }
+}
+
+.section__img-wrapper--svg {
+  position: relative;
+}
+
+.ellipce {
+  width: 43px;
+  height: 50px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: -14px;
+    width: 73px;
+    height: 75px;
+  }
+
+  @media (min-width: 1024px) {
+    top: -28px;
+    left: -71px;
+    width: 123px;
+    height: 123px;
+  }
+
+  @media (min-width: 1920px) {
+    position: static;
+  }
+}
+
+.package {
+  position: absolute;
+  top: 43%;
+  left: 7%;
+  transform: translate(0, -50%);
+  width: 43px;
+  height: 48px;
+
+  @media (min-width: 768px) {
+    left: 55%;
+    top: 50%;
+    width: 155.4px;
+    height: 79.2px;
+  }
+
+  @media (min-width: 1024px) {
+    top: -4px;
+    left: -48px;
+    width: 213px;
+    height: 130px;
+  }
+
+  @media (min-width: 1920px) {
+    top: 26px;
+    left: 24px;
+  }
+}
+
+.gear {
+  position: absolute;
+  top: 35%;
+  left: 7%;
+  transform: translate(0, -50%);
+  width: 43px;
+  height: 43px;
+
+  @media (min-width: 768px) {
+    left: 40%;
+    top: 55%;
+    width: 144px;
+    height: 81.12px;
+  }
+
+  @media (min-width: 1024px) {
+    top: -3px;
+    left: -22px;
+    height: 135px;
+  }
+
+  @media (min-width: 1920px) {
+    top: 28px;
+    left: 50px;
+  }
+}
